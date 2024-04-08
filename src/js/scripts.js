@@ -5,3 +5,38 @@
 // - Do not use onclick - use addEventListener instead
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
+
+const myName = "Marie";
+const myAge = 22;
+
+console.log(myAge);
+
+
+const toggledParagraph = document.querySelector('.show');
+console.log(toggledParagraph);
+
+
+//writing function
+
+function toggleParagraph(){
+
+    toggledParagraph.classList.toggle("hide");
+    toggledParagraph.classList.toggle("show");
+    console.log('My toggle function')
+    console.log (toggledParagraph);
+
+}
+
+toggleParagraph();
+
+toggleParagraph();
+
+const toggleButton = document.querySelector('#toggle-control');
+
+toggleButton.addEventListener("click", toggleParagraph);
+
+
+
+ 
+
+ 
